@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB6</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel ="package" href="package.json">
+    <script src="calculator.js" defer></script>
+</head>
+
+
+<body>
+    <header class="mb-2">
+        <div class="container-lg">
+            <img class="mt-1" src="log.gif" alt="logo">
+            <div class="hhh"><h1>Malder</h1></div>
+        </div>  
+    </header>
+    <section class="m-2">
+       
+        <div class="сontainer__calc p-2 mt-2  bg-light">
+            <h2 class="text-center" id="calc">Калькулятор</h2>
+            Тип товара: 
+            <form>
+                <input type="text" id = "vibor" value="" placeholder="Количество">
+                <select name="type" id="select">    
+                    <option value="1" id="Vegetables">Овощи</option>
+                    <option value="2" id="Fruits">Фрукты</option>
+                    <option value="3" id="Berries">Ягоды</option>
+                </select>
+                <div id="Bogema">
+                    <input type="radio" name="prodOptionz" id="whoiam"  onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked; " />
+                    <input type="radio" name="prodOptionz" value="Blueberry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Черника 
+                    <input type="radio" name="prodOptionz" value="Cherry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Вишня 
+                    <input type="radio" name="prodOptionz" value="Dates" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Хурма 
+                </div>  
+                <div id="Opachki">
+                    <input type="checkbox" name="Banana" id="Banana" /> Банан 
+                    <input type="checkbox" name="Orange" id="Orange" /> Апельсин
+                    <input type="checkbox" name="Grape" id="Grape" /> Виноград      
+                </div>
+                <br/>
+            </form>
+            <h5 id="price"></h5>    
+        </div>
+    </div>
+</section>
+    <footer class="container_fluid d-flex justify-content-center align-items-center">
+        Вяткин Никита 2021
+    </footer>
+</body>
+</html>
